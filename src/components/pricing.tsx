@@ -45,7 +45,7 @@ function Pricing() {
             <h1 className='text-3xl font-bold font-["Rubik"]'>Web Pro</h1>
             <img src={planet} className='h-8 w-8' alt="planet-icon" />
           </div>
-          <p className='font-light tracking-widest font-["Roboto Mono"] mt-2'>Landing Page o ChatBot personalizados para modelo de negocio</p>
+          <p className='font-light tracking-widest font-["Roboto Mono"] mt-2'>Pagina Web profesional personalizada para <br />captar clientes.</p>
           <h6 className='font-bold font-["Roboto Mono"] self-end text-end text-sm'>
             Ideal para empresas
             <br />

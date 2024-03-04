@@ -14,10 +14,10 @@ function Aboutme() {
                     <img src={personicon} className='w-[1.8rem]' alt="icono-svg" />
                 </div>
                 <p className='font-["Roboto Mono"] tracking-wide'>
-                    <span className='border-b-4 border-[#4976ED] font-bold'>Freelancer</span> apasionado con una mentalidad de aprendizaje continuo.
+                    <span className='border-b-4 border-[#4976ED] font-bold font-["Roboto Mono"] '>Freelancer</span> apasionado con una mentalidad de aprendizaje continuo.
 
                 </p>
-                <p className='mt-5'>Me encanta experimentar con nuevas tecnologías y tendencias en la industria tech para crear experiencias digitales impactantes y funcionales</p>
+                <p className='mt-5 font-["Roboto Mono"]'>Me encanta experimentar con nuevas tecnologías y tendencias en la industria tech para crear experiencias digitales impactantes y funcionales</p>
                 <div className='flex items-end flex-col justify-end mt-10'>
                     <h3 className='text-black font-bold '>Contáctame</h3>
                     <ul className='mt-2 flex gap-2'>

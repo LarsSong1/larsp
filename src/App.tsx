@@ -19,7 +19,7 @@ function App() {
 
           <Pricing />
         </div>
-        <div className='grow'>
+        <div className='grow lg:h-screen max-h-[60rem] overflow-y-scroll'>
           <Resources/>
         </div>
       </section>
