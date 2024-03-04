@@ -4,7 +4,7 @@ import Header from './cabecera'
 
 function Hero() {
   return (
-    <div className='flex flex-col w-full row-span-2 rounded-md  overflow-hidden h-4/6 '>
+    <div className='flex flex-col w-full rounded-md  overflow-hidden '>
         <Header/>
         <Aboutme/>
     </div>

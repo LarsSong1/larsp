@@ -6,7 +6,7 @@ import diablito from '../assets/img/iconos/diablito1.svg'
 
 function Header() {
   return (
-    <div className='border-4 border-b-2 border-b-[#826FA5] border-r-[#826FA5] overflow-hidden relative flex w-full justify-around h-2/6' >
+    <div className='border-4 border-b-2 border-b-[#826FA5] border-r-[#826FA5] overflow-hidden relative flex w-full justify-around h-[16rem]' >
       <div className='flex flex-col items-start grow pl-9 justify-center'>
 
         <img src={logo} className='object-contain w-full object-left h-[9rem]' alt="logotipo" />
