@@ -21,6 +21,7 @@ import nativebaseicon from '../../assets/img/iconos/cnbase.svg'
 import fleticon from '../../assets/img/iconos/cflet.svg'
 import figmaicon from '../../assets/img/iconos/cfigma.svg'
 import spline from '../../assets/img/iconos/cspline.svg'
+import expoicon from '../../assets/img/iconos/cexpo.svg'
 
 
 interface Tab {
@@ -80,6 +81,10 @@ const techData: Tab[] = [
         title: 'mobile',
         content: [
             {
+                img: expoicon,
+                title: 'Expo'
+            },
+            {
                 img: reactnicon,
                 title: 'React Native'
             },
@@ -115,7 +120,7 @@ const techData: Tab[] = [
 
 
 const DummyContent = ({ data }: { data: string }) => {
-    const designTechData = techData.find((tab) => tab.title === 'design')?.content || []
+   
     console.log(typeof data)
     if (data === "web") {
         const webTechData = techData.find((tab) => tab.title === 'web')?.content || [];
@@ -208,7 +213,7 @@ function Tech() {
 
 
     return (
-        <div className="p-10 pt-2 overflow-hidden border-2 border-b-[#826FA5] border-r-[#826FA5] h-[14rem]">
+        <div className="p-10 pt-2 overflow-hidden border-2 border-b-[#826FA5] border-r-[#826FA5] h-[12rem]">
             <div className="flex justify-start items-center">
                 <h1 className="me-5 font-['Rubik'] font-bold text-xl">Tecnologías</h1>
                 <div>
@@ -225,7 +230,7 @@ function Tech() {
                     </ul>
                 </div>
             </div>
-            <div className='pt-2'>
+            <div className=''>
                 <DummyContent data={techno} />
             </div>
         </div>

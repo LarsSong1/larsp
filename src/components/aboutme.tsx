@@ -7,7 +7,7 @@ import instagram from '../assets/img/iconos/instagram.svg'
 
 function Aboutme() {
     return (
-        <div className='flex justify-center items-center h-[27rem]  border-t-2  border-[#826FA5] border-2 border-l-0 border-r-[#826FA5]'>
+        <div className='flex justify-center items-center h-[26rem]  border-t-2  border-[#826FA5] border-2 border-l-0 border-r-[#826FA5]'>
             <div className=' border-4  w-7/12 left-0  h-full p-10 relative'>
                 <div className='flex justify-end flex-row-reverse items-center pb-10 '>
                     <h1 className='font-["Rubik"] font-bold text-xl ms-2'>Sobre Mi</h1>
