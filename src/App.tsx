@@ -11,15 +11,15 @@ function App() {
 // definir 3 rowss y darle heignt h-35 a cada uno sin rows-span lg:grid-row-3 poner
   return (
     <>
-     <section className='flex justify-around '>
-        <div className=' lg:h-screen max-w-[100rem] grid grid-cols-1 lg:grid-cols-2 w-full h-full max-h-[60rem]
-         place-items-start place-content-start mx-auto grow relative'>
+     <section className='flex lg:flex-row flex-col max-w-screen max-h-screen'>
+
+        <div className='lg:grid grid-cols-1 lg:grid-cols-2 
+           relative h-screen w-4/5  grid-rows-12'>
           <Hero />
           <Work />
-
           <Pricing />
         </div>
-        <div className='grow lg:h-screen max-h-[60rem] overflow-y-scroll'>
+        <div className='h-screen overflow-y-scroll w-1/5'>
           <Resources/>
         </div>
       </section>

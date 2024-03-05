@@ -4,14 +4,14 @@ import igicon from '../assets/img/iconos/instagram.svg'
 import diablito from '../assets/img/iconos/diablito4.svg'
 
 function Pricing() {
-  return (
-    <div className="border-[#826AF5] border-2 w-full col-span-2 h-[19rem] p-10 pb-0 relative">
+  return ( 
+    <div className="border-[#826AF5] border-2  col-span-2 p-10 pb-0 relative row-span-4">
 
       <div className='flex'>
         <img src={docsicon} className='w-[1.8rem]' alt="icono-svg" />
         <h1 className='font-["Rubik"] font-bold text-xl ms-2'>Precios</h1>
       </div>
-      <div className='px-9 mt-4 w-full flex gap-10'>
+      <div className='px-9 mt-4 w-full flex gap-10 lg:flex-nowrap flex-wrap justify-center lg:justify-start'>
         {/* card 1 */}
         <div className='w-[24rem] flex flex-col'>
           <div className='w-full flex justify-between items-center'>

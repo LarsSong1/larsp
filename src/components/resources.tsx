@@ -31,7 +31,7 @@ function Resources() {
         ,
         {
           title: 'Stack Sorted',
-          description: 'Collecion de elementos UI para inspiración',
+          description: 'Colleción de elementos UI para inspiración',
           link: 'https://stacksorted.com/'
         }
       ]
@@ -42,25 +42,41 @@ function Resources() {
 
         {
           title: 'Wicked Blocks',
-          description: 'Collecion gratuita de componentes hechos en TailwindCss',
+          description: 'Collección gratuita de componentes hechos en TailwindCss',
           link: 'https://wickedblocks.dev/'
         },
         {
           title: 'Shots',
           description: 'Crea Mockups para redes sociales o webs de forma sencilla y rápida',
           link: 'https://shots.so/'
+        },
+        {
+          title: 'Landingfolio',
+          description: 'Colección de componenetes de tailwindCss, hay componentes gratis tambien',
+          link: 'https://www.landingfolio.com/library'
+        },
+        {
+          title: 'React Themes',
+          description: 'Colección de plantillas de React Gratis',
+          link: 'https://www.landingfolio.com/library'
+        },
+        {
+          title: 'V0',
+          description: 'IA que te genera el layout del component que desees tan solo con escribirlo',
+          link: 'https://v0.dev/'
         }
+
       ]
     },
 
   ]
   return (
-    <div className='p-10 pb-0 '>
+    <div className='p-10 pb-0 lg:w-full overflow-hidden w-[100vw]'>
       <div className='flex'>
         <img src={resources} className='w-[1.8rem]' alt="icono-svg" />
         <h1 className='font-["Rubik"] font-bold text-xl ms-2'>Recursos</h1>
       </div>
-      <div className=' max-w-[15rem] overflow-hidden'>
+      <div className=' max-w-[15rem] lg:w-[15rem] w-[30rem] overflow-hidden mx-auto'>
         {dataResources.map((resour) => (
           <div className='mb-5'>
             <h2 className='font-["Rubik"] font-bold text-lg mb-2 mt-8'>{resour.title}</h2>

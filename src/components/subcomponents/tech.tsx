@@ -213,7 +213,7 @@ function Tech() {
 
 
     return (
-        <div className="p-10 pt-2 overflow-hidden border-2 border-b-[#826FA5] border-r-[#826FA5] h-[12rem]">
+        <div className="p-10 pt-2 overflow-hidden border-2 border-b-[#826FA5] border-r-[#826FA5] h-2/6">
             <div className="flex justify-start items-center">
                 <h1 className="me-5 font-['Rubik'] font-bold text-xl">Tecnologías</h1>
                 <div>

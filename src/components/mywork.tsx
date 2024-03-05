@@ -14,7 +14,7 @@ import Tech from "./subcomponents/tech";
 function Work() {
  
   return (
-    <div className="w-full h-full">
+    <div className="w-full h-full row-span-8">
       <Tech/>
       <Projects/>
     </div>
