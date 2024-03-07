@@ -7,4 +7,10 @@
 .title-shadow {
   text-shadow: 4px 2px 6px #4976ED;
   filter: text;
+  font-size: clamp(1.5em, 2vh, 5em);
+}
+
+
+.icon-purple {
+  width: clamp(2em,1.5vw, 7em);
 }

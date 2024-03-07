@@ -137,9 +137,9 @@ const DummyContent = ({ data }: { data: string }) => {
             >
                 {webTechData.map((tabContent, key) => (
                     <SwiperSlide key={key}>
-                        <div className='bg-black w-[110px] h-[110px] flex flex-col justify-center items-center rounded-md mt-5'>
-                            <img className='w-[40px] h-[40px]' src={tabContent.img} alt={tabContent.title} />
-                            <p className='text-white text-sm font-semibold mt-2 font-["Rubik"]'>{tabContent.title}</p>
+                        <div className='bg-black w-[5.2vw] h-[5.2vw] flex flex-col justify-center items-center rounded-md mt-[2vh]'>
+                            <img className='w-[4vw] h-[4vh]' src={tabContent.img} alt={tabContent.title} />
+                            <p className='text-white text-[1.5vh] font-semibold mt-2 font-["Rubik"]'>{tabContent.title}</p>
                         </div>
                     </SwiperSlide>
                 ))
@@ -161,9 +161,9 @@ const DummyContent = ({ data }: { data: string }) => {
             >
                 {mobileTechData.map((tabContent, key) => (
                     <SwiperSlide key={key}>
-                        <div className='bg-black w-[110px] h-[110px] flex flex-col justify-center items-center rounded-md mt-5'>
-                            <img className='w-[40px] h-[40px]' src={tabContent.img} alt={tabContent.title} />
-                            <p className='text-white text-sm font-semibold mt-2 font-["Rubik"]'>{tabContent.title}</p>
+                        <div className='bg-black w-[5.2vw] h-[5.2vw] flex flex-col justify-center items-center rounded-md mt-[2vh]'>
+                            <img className='w-[4vw] h-[4vh]' src={tabContent.img} alt={tabContent.title} />
+                            <p className='text-white text-[1.5vh] font-semibold mt-2 font-["Rubik"]'>{tabContent.title}</p>
                         </div>
                     </SwiperSlide>
                 ))
@@ -186,9 +186,9 @@ const DummyContent = ({ data }: { data: string }) => {
         >
             {designTechData.map((tabContent, key) => (
                 <SwiperSlide key={key}>
-                    <div className='bg-black w-[110px] h-[110px] flex flex-col justify-center items-center rounded-md mt-5'>
-                        <img className='w-[40px] h-[40px]' src={tabContent.img} alt={tabContent.title} />
-                        <p className='text-white text-sm font-semibold mt-2 font-["Rubik"]'>{tabContent.title}</p>
+                    <div className='bg-black w-[5.2vw] h-[5.2vw] flex flex-col justify-center items-center rounded-md mt-[2vh]'>
+                        <img className='w-[4vw] h-[4vh]' src={tabContent.img} alt={tabContent.title} />
+                        <p className='text-white text-[1.5vh] font-semibold mt-2 font-["Rubik"]'>{tabContent.title}</p>
                     </div>
                 </SwiperSlide>
             ))
@@ -213,19 +213,19 @@ function Tech() {
 
 
     return (
-        <div className="p-10 pt-2 overflow-hidden border-2 border-b-[#826FA5] border-r-[#826FA5] h-2/6">
+        <div className="p-[1.5vw]  overflow-hidden border-2 border-b-[#826FA5] border-r-[#826FA5] h-2/6">
             <div className="flex justify-start items-center">
-                <h1 className="me-5 font-['Rubik'] font-bold text-xl">Tecnologías</h1>
+                <h1 className="me-5 font-['Rubik'] font-bold title-shadow">Tecnologías</h1>
                 <div>
-                    <ul className='flex gap-5'>
+                    <ul className='flex gap-[0.5vw]'>
                         <li className='border-2 border-black rounded-md p-2' onClick={() => returnTech("web")}>
-                            <img src={webicon} className='w-[15px]' alt="web-icon" />
+                            <img src={webicon} className='w-[1vw] h-[2vh]' alt="web-icon" />
                         </li>
                         <li className='border-2 border-black rounded-md p-2' onClick={() => returnTech("mobile")}>
-                            <img src={phoneicon} className='w-[15px]' alt="phone-icon" />
+                            <img src={phoneicon} className='w-[1vw] h-[2vh]' alt="phone-icon" />
                         </li>
                         <li className='border-2 border-black rounded-md p-2' onClick={() => returnTech("design")}>
-                            <img src={brush} className='w-[15px]' alt="brush-icon" />
+                            <img src={brush} className='w-[1vw] h-[2vh]' alt="brush-icon" />
                         </li>
                     </ul>
                 </div>

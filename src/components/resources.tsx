@@ -71,26 +71,26 @@ function Resources() {
 
   ]
   return (
-    <div className='p-10 pb-0 lg:w-full overflow-hidden w-[100vw]'>
+    <div className='p-10 pb-0 lg:w-full overflow-hidden '>
       <div className='flex'>
-        <img src={resources} className='w-[1.8rem]' alt="icono-svg" />
-        <h1 className='font-["Rubik"] font-bold text-xl ms-2'>Recursos</h1>
+        <img src={resources} className='w-[1.5vw]' alt="icono-svg" />
+        <h1 className='font-["Rubik"] font-bold  title-shadow ms-2'>Recursos</h1>
       </div>
-      <div className=' max-w-[15rem] lg:w-[15rem] w-[30rem] overflow-hidden mx-auto'>
+      <div className=' w-full overflow-hidden mx-start'>
         {dataResources.map((resour) => (
           <div className='mb-5'>
-            <h2 className='font-["Rubik"] font-bold text-lg mb-2 mt-8'>{resour.title}</h2>
+            <h2 className='font-["Rubik"] font-bold text-lg mb-2 mt-[4vh] text-[2vh] border-b-4 border-black'>{resour.title}</h2>
             {
               resour.content.map((content) => (
-                <div className='mb-3'>
+                <div className='mb-[1vh]'>
                   <div className='bg-black flex p-4 justify-between rounded-t-md'>
-                    <h2 className='text-white font-bold font-["Rubik"]'>{content.title}</h2>
-                    <a href={content.link} target='_blank'>
-                      <img src={arrow} className='w-13 h-13' alt="arrow-icon" />
+                    <h2 className='text-white font-bold font-["Rubik"] text-[1.8vh]'>{content.title}</h2>
+                    <a href={content.link} className='flex items-center' target='_blank'>
+                      <img src={arrow} className='w-[1.5vw] h-[1.5vh]' alt="arrow-icon" />
                     </a>
                   </div>
                   <div className='shadow-md shadow-black p-2 rounded-b-md'>
-                    <p className='font-light text-sm font-["Roboto Mono"]'>
+                    <p className='font-light text-[1.6vh] font-["Roboto Mono"]'>
                       {content.description}
                     </p>
                   </div>

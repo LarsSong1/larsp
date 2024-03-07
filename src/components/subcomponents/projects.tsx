@@ -65,12 +65,12 @@ function Projects() {
 
   ]
   return (
-    <div className="p-10 w-full border-2 border-[#826FA5] border-l-0 border-b-2 overflow-hidden relative h-4/6 bg-white">
-      <div className='flex justify-end flex-row-reverse items-center pb-10'>
-        <h1 className='font-["Rubik"] font-bold text-xl ms-2'>Proyectos</h1>
-        <img src={labicon} className='w-[1.8rem]' alt="icono-svg" />
+    <div className="p-[3vh] w-full border-2 border-[#826FA5] border-l-0 border-b-2 overflow-hidden relative h-4/6 bg-white">
+      <div className='flex justify-end flex-row-reverse items-center pb-[2vh]'>
+        <h1 className='font-["Rubik"] font-bold ms-[0.5vw] title-shadow'>Proyectos</h1>
+        <img src={labicon} className='w-[1.5vw]' alt="icono-svg" />
       </div>
-      <img src={diablito} className='absolute right-40 top-12 w-[6rem] h-[6rem] z-20' alt="diablito-image" />
+      <img src={diablito} className='absolute right-[10vw] top-[2vh] w-[5vw] h-[5vw] z-20' alt="diablito-image" />
       <Swiper
         loop={true}
         modules={[Autoplay]}
@@ -79,8 +79,8 @@ function Projects() {
           disableOnInteraction: false,
         }}
         direction='vertical'
-        spaceBetween={20} // Espacio entre diapositivas
-        style={{ height: "20rem" }}
+        spaceBetween={10} // Espacio entre diapositivas
+        style={{ height: "35vh" }}
         slidesPerView={2}
 
       >
@@ -89,24 +89,24 @@ function Projects() {
 
 
           <SwiperSlide>
-            <div key={key} className='border-[#826FA5] rounded-md p-4 border-2 h-[9rem] relative'>
+            <div key={key} className='border-[#826FA5] rounded-md p-[1vw] border-2 h-[15vh] relative'>
               <div className='flex justify-between '>
-                <h2 className='font-["Rubik"] font-bold'>{proy.title}</h2>
+                <h2 className='font-["Rubik"] font-bold text-[1.7vh]'>{proy.title}</h2>
                 <div className='flex items-center '>
                   <a href={proy.view} target='_blank' className='me-5'>
-                    <img src={eyeicon} alt="eye-icon" />
+                    <img src={eyeicon} className='w-[1.5vw]' alt="eye-icon" />
                   </a>
                   <a href={proy.github} target='_blank'>
-                    <img src={github} alt="github-icon" />
+                    <img src={github} className='w-[1.2vw]' alt="github-icon" />
                   </a>
                 </div>
               </div>
-              <p className='font-light font-["Roboto Mono"] tracking-widest text-sm'>{proy.description}</p>
+              <p className='font-light font-["Roboto Mono"] tracking-widest text-[1.5vh]'>{proy.description}</p>
               <div className=' mt-5 gap-2 absolute bottom-3 right-3 flex'>
 
                 {proy.tecnologias.map((techn, key) => (
-                  <div key={key} className='w-[2.5rem] h-[2.5rem] rounded-md border-2 border-black border-opacity-60 flex justify-center items-center'>
-                    <img src={techn} className='w-8 h-8' alt="techonologies" />
+                  <div key={key} className='w-[4vh] h-[4vh] rounded-md border-2 border-black border-opacity-60 flex justify-center items-center'>
+                    <img src={techn} className='w-[2.9vh]' alt="techonologies" />
                   </div>
                 ))}
 
