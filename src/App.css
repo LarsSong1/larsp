@@ -14,3 +14,51 @@
 .icon-purple {
   width: clamp(2em,1.5vw, 7em);
 }
+
+
+.text-second {
+  font-size: clamp(0.9em, 1.6vh, 5em);;
+}
+
+
+
+
+.avatar {
+  width: clamp(14em, 10vw, 30em);
+  height: clamp(15em, 30vh, 50em);
+}
+
+
+.title-second {
+  font-size: clamp(1em, 1.5vh, 4em);
+  font-weight: 900;
+}
+
+
+.mini-box {
+  width: clamp(3em, 1.2vw, 5em);
+  height: clamp(3em, 1.2vh, 5em);
+}
+
+.mini-box .icon {
+  width: clamp(2em, 1.2vw, 4em);
+  height: clamp(2em, 1.2vh, 4em);
+}
+
+
+
+.tech-stack {
+  width: clamp(6em, 5.2vw, 12em);
+  height: clamp(6em, 5.2vh, 12em);
+}
+
+.tech-stack img{
+  width: clamp(2em, 4vw, 10em);
+  height: clamp(2em, 4vh, 10em);
+  object-fit: contain;
+}
+
+
+.mini-icon-purple {
+  width: clamp(1.5em,1.5vw, 5em);
+}

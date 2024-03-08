@@ -6,15 +6,15 @@ import whatsappicon from '../assets/img/iconos/whatsapp.svg'
 
 function Pricing() {
   return ( 
-    <div className="border-[#826AF5] border-2 col-span-2 p-[4vh] pb-0 relative row-span-4">
+    <div className="lg:border-[#826AF5] lg:border-2 col-span-2 p-[2em] relative lg:row-span-4 row-span-3 ">
 
       <div className='flex'>
-        <img src={docsicon} className='w-[1.5vw]' alt="icono-svg" />
+        <img src={docsicon} className='icon-purple' alt="icono-svg" />
         <h1 className='font-["Rubik"] font-bold title-shadow ms-2'>Planes</h1>
       </div>
-      <div className='px-9 mt-4 w-full flex gap-10 lg:flex-nowrap flex-wrap justify-center lg:justify-start'>
+      <div className='lg:px-9  lg:mt-4 mt-0 w-full flex gap-10 flex-col lg:flex-row justify-center lg:justify-start'>
         {/* card 1 */}
-        <div className='w-2/6 flex flex-col'>
+        <div className='lg:w-2/6  flex flex-col'>
           <div className='w-full flex justify-between items-center'>
             <h1 className='text-[3vh] font-bold font-["Rubik"]'>Starter Web</h1>
             <img src={planet} className='w-[2vw]' alt="planet-icon" />
@@ -41,7 +41,7 @@ function Pricing() {
 
         {/* card 2 */}
 
-        <div className='w-2/6 flex flex-col'>
+        <div className='lg:w-2/6 flex flex-col'>
           <div className='w-full flex justify-between items-center'>
             <h1 className='text-[3vh] font-bold font-["Rubik"]'>Web Pro</h1>
             <img src={planet} className='w-[2vw]' alt="planet-icon" />
