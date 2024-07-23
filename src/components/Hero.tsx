@@ -1,6 +1,6 @@
 
 import Aboutme from './aboutme'
-import Header from './cabecera'
+import Header from './Header'
 
 function Hero() {
   return (

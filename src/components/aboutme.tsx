@@ -1,4 +1,3 @@
-import avatar from '../assets/img/avatar.svg'
 import diablito from '../assets/img/iconos/diablito2.svg'
 import personicon from '../assets/img/iconos/person.svg'
 import whatsapp from '../assets/img/iconos/whatsapp.svg'
@@ -7,8 +6,8 @@ import instagram from '../assets/img/iconos/instagram.svg'
 
 function Aboutme() {
     return (
-        <div className='flex flex-col pt-10 lg:pt-0 lg:flex-row justify-center items-center border-t-2  lg:border-[#826FA5] lg:border-2 border-l-0 border-r-[#826FA5] h-3/5'>
-            <div className='   lg:w-7/12 left-0  h-full lg:p-[2em] p-5 mt-5 lg:mt-0 relative w-full'>
+        <div className='flex justify-center items-center lg:border-[#826FA5]  border-l-0 border-r-[#826FA5] h-3/5'>
+            <div className=' left-0  h-full lg:p-[2em] p-5 mt-5 lg:mt-0 relative w-full'>
                 <div className='flex justify-end flex-row-reverse items-center pb-[2vh] '>
                     <h1 className='font-["Rubik"] font-bold ms-2 title-shadow'>Sobre Mi</h1>
                     <img src={personicon}  className='icon-purple' alt="icono-svg" />
@@ -40,13 +39,6 @@ function Aboutme() {
 
                 </div>
                 <img src={diablito} className='absolute rotate-45 transition-all ease-in-out lg:rotate-0 lg:bottom-[-0.8vw] lg:left-[-0.8vw] lg:h-[7em] left-[-1em] duration-300 delay-150' alt="Doodles-image" />
-            </div>
-            <div className=' lg:border-2 lg:w-5/12 mb-10 lg:mb-0 w-8/12 lg:border-l-[#826FA5] lg:border-r-[#826FA5] h-full relative flex justify-center items-center '>
-                <div className='rounded-3xl overflow-hidden avatar relative'>
-                    <img src={avatar} className='w-full h-full object-cover' alt="Me" />
-                    <p className='absolute bottom-0 font-["Rubik"] bg-[#826FA5] text-white lg:rounded-md rounded-sm w-full text-center text-md lg:text-xl'>Jair Alejandro</p>
-                </div>
-
             </div>
         </div>
     )
