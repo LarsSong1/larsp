@@ -65,7 +65,7 @@ function Projects() {
 
   ]
   return (
-    <div className="p-[1em] w-full lg:border-2 lg:border-[#826FA5] border-l-0 lg:border-b-2 overflow-hidden relative h-[350px] lg:h-4/6 bg-white">
+    <div className="p-[1em] w-full lg:border-[#826FA5] border-l-0 overflow-hidden relative h-full bg-white">
       <div className='flex justify-end flex-row-reverse items-center pb-[2vh]'>
         <h1 className='font-["Rubik"] font-bold ms-[0.5vw] title-shadow'>Proyectos</h1>
         <img src={labicon} className='icon-purple' alt="icono-svg" />

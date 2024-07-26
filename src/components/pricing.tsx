@@ -6,13 +6,13 @@ import whatsappicon from '../assets/img/iconos/whatsapp.svg'
 
 function Pricing() {
   return ( 
-    <div className="lg:border-[#826AF5] lg:border-2 col-span-2 p-[2em] relative lg:row-span-4 row-span-3 ">
+    <div className="lg:border-[#826AF5] lg:border-2 col-span-2 p-[2em] relative row-span-4">
 
       <div className='flex'>
         <img src={docsicon} className='icon-purple' alt="icono-svg" />
         <h1 className='font-["Rubik"] font-bold title-shadow ms-2'>Planes</h1>
       </div>
-      <div className='lg:px-9  lg:mt-4 mt-0 w-full flex gap-10 flex-col lg:flex-row justify-center lg:justify-start'>
+      <div className='lg:px-9  w-full flex gap-10 flex-col lg:flex-row justify-center lg:justify-start'>
         {/* card 1 */}
         <div className='lg:w-2/6  flex flex-col'>
           <div className='w-full flex justify-between items-center'>

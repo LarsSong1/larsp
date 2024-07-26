@@ -4,6 +4,8 @@ import Hero from './components/Hero'
 import Work from './components/mywork'
 import Pricing from './components/pricing'
 import Resources from './components/resources'
+import 'remixicon/fonts/remixicon.css'
+
 
 
 function App() {
@@ -11,9 +13,8 @@ function App() {
   
   return (
     <>
-     <section className='flex min-h-[2000px] lg:min-h-0 lg:max-h-[100vh] overflow-hidden rounded-md'>
-
-        <div className='lg:grid grid-cols-1 lg:grid-cols-2 relative h-screen  xl:w-4/5 grid-rows-12  w-full '>
+     <section className='flex lg:max-h-screen overflow-hidden rounded-md'>
+        <div className='lg:grid grid-cols-1 lg:grid-cols-2 relative xl:w-4/5 grid-rows-12 w-full '>
           <Hero />
           <Work />  
           <Pricing />

@@ -15,7 +15,6 @@ function Work() {
  
   return (
     <div className="w-full lg:h-full row-span-8 ">
-      <Tech/>
       <Projects/>
     </div>
   )

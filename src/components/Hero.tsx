@@ -4,7 +4,7 @@ import Header from './Header'
 
 function Hero() {
   return (
-    <div className='flex flex-col w-full rounded-md lg:overflow-hidden h-full lg:row-span-8 row-span-3 '>
+    <div className='flex flex-col w-full rounded-md lg:overflow-hidden mb-2 row-span-8 h-full'>
         <Header/>
         <Aboutme/>
     </div>
