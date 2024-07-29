@@ -32,5 +32,17 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5.2.2",
     "vite": "^5.1.4"
-  }
+  },
+  "description": "portfolio",
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LarsSong1/larsp.git"
+  },
+  "author": "Jair Alejandro Gavilanez Panchana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LarsSong1/larsp/issues"
+  },
+  "homepage": "https://github.com/LarsSong1/larsp#readme"
 }

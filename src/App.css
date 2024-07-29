@@ -29,7 +29,7 @@
 }
 
 .download-icon {
-  font-size: clamp(25px, 2vw, 25px);
+  font-size: var(--icon-size);
 }
 
 .text-content {
