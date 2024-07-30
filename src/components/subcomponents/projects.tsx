@@ -18,6 +18,7 @@ import unemeetingImg from '../../assets/img/unemeeting.webp'
 import blogTopImg from '../../assets/img/blogtopten.webp'
 import fletCalculosImg from '../../assets/img/fletcalculos.webp'
 import ecommerceImg from '../../assets/img/ecommerce.webp'
+import supabaseIcon from '../../assets/img/iconos/supabase.svg'
 
 import { SwiperSlide, Swiper } from "swiper/react";
 import { Autoplay } from 'swiper/modules'
@@ -31,7 +32,7 @@ function Projects() {
       description: 'Plataforma de venta de productos por medio de un aplicativo web adaptado a modelo de negocio de venta',
       github: 'https://github.com/LarsSong1/agrozam',
       view: 'https://agrozam.netlify.app/',
-      tecnologias: [nexticon, markdownicon, emailicon, tailwindicon],
+      tecnologias: [nexticon, supabaseIcon, emailicon, tailwindicon],
       img: ecommerceImg,
       gradientT: '#D9974D',
       gradientB: '#000000',
