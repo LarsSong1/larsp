@@ -1,6 +1,5 @@
 
 import Projects from "./subcomponents/projects";
-import Tech from "./subcomponents/tech";
 
 
 

@@ -1,4 +1,3 @@
-import resources from '../assets/img/iconos/saved.svg'
 import arrow from '../assets/img/iconos/arrow.svg'
 
 
