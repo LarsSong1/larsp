@@ -1,9 +1,8 @@
-import webicon from '../../assets/img/iconos/desktop.svg'
-import brush from '../../assets/img/iconos/brush.svg'
-import phoneicon from '../../assets/img/iconos/phone.svg'
 import { useState } from 'react';
 import { SwiperSlide, Swiper } from "swiper/react";
 import "swiper/css";
+
+
 import javascript from '../../assets/img/iconos/cjs.svg'
 import python from '../../assets/img/iconos/cpython.svg'
 import react from '../../assets/img/iconos/creact.svg'
@@ -22,6 +21,7 @@ import fleticon from '../../assets/img/iconos/cflet.svg'
 import figmaicon from '../../assets/img/iconos/cfigma.svg'
 import spline from '../../assets/img/iconos/cspline.svg'
 import expoicon from '../../assets/img/iconos/cexpo.svg'
+
 
 
 interface Tab {
@@ -120,7 +120,7 @@ const techData: Tab[] = [
 
 
 const DummyContent = ({ data }: { data: string }) => {
-   
+
     console.log(typeof data)
     if (data === "web") {
         const webTechData = techData.find((tab) => tab.title === 'web')?.content || [];
@@ -133,10 +133,10 @@ const DummyContent = ({ data }: { data: string }) => {
                     disableOnInteraction: false,
                 }}
                 breakpoints={{
-                    1600:{
-                        slidesPerView:6
+                    1600: {
+                        slidesPerView: 6
                     },
-                    1400:{
+                    1400: {
                         slidesPerView: 5,
                     },
                     704: {
@@ -146,12 +146,13 @@ const DummyContent = ({ data }: { data: string }) => {
                         slidesPerView: 3
                     }
                 }}
-               
+                spaceBetween={7}
+
 
             >
                 {webTechData.map((tabContent, key) => (
                     <SwiperSlide key={key}>
-                        <div className='bg-black tech-stack flex flex-col justify-center items-center rounded-md mt-[2em] lg:mt-[1em]'>
+                        <div className='bg-black tech-stack flex flex-col justify-center items-center rounded-md mt-[2em] lg:mt-[1em] h-[100px] min-h-[15lvh] hover:scale-110 hover:border-white border-2'>
                             <img className='' src={tabContent.img} alt={tabContent.title} />
                             <p className='text-white  font-semibold mt-2 font-["Rubik"]'>{tabContent.title}</p>
                         </div>
@@ -175,9 +176,9 @@ const DummyContent = ({ data }: { data: string }) => {
             >
                 {mobileTechData.map((tabContent, key) => (
                     <SwiperSlide key={key}>
-                        <div className='bg-black tech-stack flex flex-col justify-center items-center rounded-md mt-[2vh]'>
-                            <img className='' src={tabContent.img} alt={tabContent.title} />
-                            <p className='text-white  font-semibold mt-2 font-["Rubik"]'>{tabContent.title}</p>
+                        <div className='bg-black tech-stack flex flex-col justify-center items-center rounded-md mt-[2vh] h-[100px] min-h-[15lvh] hover:scale-110 hover:border-white border-2'>
+                            <img className='h-[40px]' src={tabContent.img} alt={tabContent.title} />
+                            <p className='text-white text-content font-semibold mt-2 font-["Rubik"]'>{tabContent.title}</p>
                         </div>
                     </SwiperSlide>
                 ))
@@ -186,28 +187,28 @@ const DummyContent = ({ data }: { data: string }) => {
 
         )
     } else {
-        const designTechData = techData.find((tab)=> tab.title === 'design')?.content || [];
+        const designTechData = techData.find((tab) => tab.title === 'design')?.content || [];
         return (
             <Swiper
-            loop={true}
-            modules={[Autoplay]}
-            autoplay={{
-                delay: 1500,
-                disableOnInteraction: false,
-            }}
-            slidesPerView={6}
+                loop={true}
+                modules={[Autoplay]}
+                autoplay={{
+                    delay: 1500,
+                    disableOnInteraction: false,
+                }}
+                slidesPerView={6}
 
-        >
-            {designTechData.map((tabContent, key) => (
-                <SwiperSlide key={key}>
-                    <div className='bg-black tech-stack flex flex-col justify-center items-center rounded-md mt-[1em]'>
-                        <img className='' src={tabContent.img} alt={tabContent.title} />
-                        <p className='text-white font-semibold mt-2 font-["Rubik"]'>{tabContent.title}</p>
-                    </div>
-                </SwiperSlide>
-            ))
-            }
-        </Swiper >
+            >
+                {designTechData.map((tabContent, key) => (
+                    <SwiperSlide key={key}>
+                        <div className='bg-black tech-stack flex flex-col justify-center items-center rounded-md mt-[1em] h-[100px] min-h-[15lvh] hover:scale-110 hover:border-white border-2'>
+                            <img className='' src={tabContent.img} alt={tabContent.title} />
+                            <p className='text-white font-semibold mt-2 font-["Rubik"]'>{tabContent.title}</p>
+                        </div>
+                    </SwiperSlide>
+                ))
+                }
+            </Swiper >
 
 
         )
@@ -227,19 +228,20 @@ function Tech() {
 
 
     return (
-        <div className="p-[1em]  overflow-hidden lg:border-2 lg:border-b-[#826FA5] lg:border-r-[#826FA5] h-2/6 mt-4 lg:mt-0">
+        <div className="p-[1em]  overflow-hidden lg:border-2 lg:border-t-[#826FA5] row-span-4 col-span-2 mt-4 lg:mt-0">
             <div className="flex justify-start items-center">
-                <h1 className="me-5 font-['Rubik'] font-bold title-shadow">Tecnologías</h1>
+                <h1 className="me-5 font-['Rubik'] font-bold subtitle">Tecnologías</h1>
                 <div>
                     <ul className='flex gap-[0.5em]'>
-                        <li className='border-2  flex justify-center items-center border-black rounded-md mini-box' onClick={() => returnTech("web")}>
-                            <img src={webicon} className='icon' alt="web-icon" />
+                        <li className='border-2  flex justify-center items-center border-black rounded-md  pe-2 ps-2 cursor-pointer' onClick={() => returnTech("web")}
+                        >
+                            <i className="ri-window-fill icon-size"></i>
                         </li>
-                        <li className='border-2 flex justify-center items-center border-black rounded-md mini-box' onClick={() => returnTech("mobile")}>
-                            <img src={phoneicon} className='icon' alt="phone-icon" />
+                        <li className='border-2 flex justify-center items-center border-black rounded-md  ps-2 pe-2 cursor-pointer ' onClick={() => returnTech("mobile")}>
+                            <i className="ri-smartphone-line icon-size "></i>
                         </li>
-                        <li className='border-2 flex justify-center items-center border-black rounded-md mini-box' onClick={() => returnTech("design")}>
-                            <img src={brush} className='icon' alt="brush-icon" />
+                        <li className='border-2 flex justify-center items-center border-black rounded-md ps-2 pe-2 cursor-pointer' onClick={() => returnTech("design")}>
+                            <i className="ri-brush-line icon-size"></i>
                         </li>
                     </ul>
                 </div>

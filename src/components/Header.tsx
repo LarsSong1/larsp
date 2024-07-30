@@ -18,7 +18,7 @@ function Header() {
       </div>
 
 
-      <img src={diablito} className='lg:absolute lg:block hidden relative -bottom-4 right-0 h-[5vh] min-h-[50%]' alt="doodles-image" />
+      <img src={diablito} className='lg:absolute lg:block hidden relative -bottom-4 right-0 h-[5vh] min-h-[50%] ' alt="doodles-image" />
 
     </div>
   )

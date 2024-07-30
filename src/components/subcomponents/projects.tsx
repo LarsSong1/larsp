@@ -82,10 +82,10 @@ function Projects() {
 
   ]
   return (
-    <div className="p-[1em] w-full lg:border-[#826FA5] border-l-0 overflow-hidden relative h-full bg-white">
+    <div className="p-[1em] w-full lg:border-[#826FA5] border-l-0 overflow-hidden relative  bg-white">
       <div className='flex justify-end flex-row-reverse items-center pb-[2vh] mb-4'>
-        <h1 className='font-["Rubik"] font-bold ms-[0.5vw] title-shadow'>Proyectos</h1>
-        <img src={labicon} className='icon-purple' alt="icono-svg" />
+        <h1 className='font-["Rubik"] font-bold ms-[0.5vw] subtitle'>Proyectos</h1>
+        <i className="ri-terminal-box-fill icon-size text-green-800"></i>
       </div>
       <img src={diablito} className='absolute right-[10vw] animate-bounce hover:animate-spin duration-200 top-[1em]  lg:h-[6em] z-20' alt="diablito-image" />
       <Swiper
@@ -103,16 +103,16 @@ function Projects() {
               slidesPerView: 1
             },
 
-            200:{
+            200: {
               direction: 'horizontal',
-              slidesPerView:1
+              slidesPerView: 1
             }
           }
         }
-      
-        spaceBetween={5} // Espacio entre diapositivas
-        style={{ height: "26em" }}
-        
+
+        spaceBetween={10} // Espacio entre diapositivas
+        style={{ height: "26em", minHeight: "50vh", maxHeight: "52lvh" }}
+
 
       >
 
@@ -120,15 +120,15 @@ function Projects() {
 
 
           <SwiperSlide>
-            <div key={key} className='border-[#826FA5] rounded-md border-2 proyects-stack relative h-full overflow-hidden'>
+            <div key={key} className='border-[#826FA5] rounded-md border-2 proyects-stack relative overflow-hidden h-full bottom-0'>
               <div className='flex justify-between  p-[1em] '>
                 <h2 className='font-["Rubik"] font-bold subtitle'>{proy.title}</h2>
                 <div className='flex items-center '>
                   <a href={proy.view} target='_blank' className='me-5'>
-                    <img src={eyeicon} className='mini-icon-purple' alt="eye-icon" />
+                    <i className="ri-eye-line icon-size"></i>
                   </a>
                   <a href={proy.github} target='_blank'>
-                    <img src={github} className='mini-icon-purple ' alt="github-icon" />
+                    <i className="ri-github-fill icon-size"></i>
                   </a>
                 </div>
               </div>
@@ -139,7 +139,7 @@ function Projects() {
                   background: `linear-gradient(to bottom, transparent 10%, ${proy.gradientT}, ${proy.gradientB} 40%)`,
                 }}
               >
-                <img className='h-[320px] hover:scale-125 ease-in-out duration-150' src={proy.img} alt={proy.title} />
+                <img className='lg:h-[320px] hover:scale-110 h-[250px] lg:hover:scale-125 ease-in-out duration-150' src={proy.img} alt={proy.title} />
               </div>
               <div className=' mt-5 gap-2 absolute bottom-3 right-3 flex bg-black p-2 rounded-md'>
 

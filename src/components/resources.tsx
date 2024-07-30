@@ -71,10 +71,10 @@ function Resources() {
 
   ]
   return (
-    <div className='p-10 pb-0 lg:w-full overflow-hidden '>
+    <div className='p-10 pb-0 lg:w-full overflow-hidden border-l-2 border-[#826FA5]'>
       <div className='flex'>
-        <img src={resources} className='w-[1.5vw]' alt="icono-svg" />
-        <h1 className='font-["Rubik"] font-bold  title-shadow ms-2'>Recursos</h1>
+        <i className="ri-save-fill icon-size text-green-800"></i>
+        <h1 className='font-["Rubik"] font-bold subtitle ms-2'>Recursos</h1>
       </div>
       <div className=' w-full overflow-hidden mx-start'>
         {dataResources.map((resour) => (
