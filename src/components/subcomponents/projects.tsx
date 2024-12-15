@@ -31,7 +31,7 @@ function Projects() {
       title: 'E-commerce',
       description: 'Plataforma de venta de productos por medio de un aplicativo web adaptado a modelo de negocio de venta',
       github: 'https://github.com/LarsSong1/agrozam',
-      view: 'https://agrozam.netlify.app/',
+      view: 'https://agrozam-js.vercel.app',
       tecnologias: [reacticon, supabaseIcon, emailicon, tailwindicon],
       img: ecommerceImg,
       gradientT: '#D9974D',
