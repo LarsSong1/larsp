@@ -19,6 +19,10 @@ import blogTopImg from '../../assets/img/blogtopten.webp'
 import fletCalculosImg from '../../assets/img/fletcalculos.webp'
 import ecommerceImg from '../../assets/img/ecommerce.webp'
 import supabaseIcon from '../../assets/img/iconos/supabase.svg'
+import djangoicon from '../../assets/img/iconos/cdjango.svg'
+import ultralitycsicon from '../../assets/img/iconos/cultralitycs.svg'
+import aiCacaoImg from '../../assets/img/cocoaApp.webp'
+import barberiaApp from '../../assets/img/barberiaApp.webp'
 
 import { SwiperSlide, Swiper } from "swiper/react";
 import { Autoplay } from 'swiper/modules'
@@ -48,13 +52,35 @@ function Projects() {
       gradientB: '#E2AC08',
 
     },
-    // {
-    //   title: 'Barberia',
-    //   description: 'Este aplicativo web fue un trabajo desarrollado para estudiantes de una universidad, consta de funcionalidad de registro de usuarios, agendamiento de citas y filtrado de barberias disponibles en la ciudad',
-    //   github: 'https://github.com/LarsSong1/barberia_app',
-    //   view: 'https://drive.google.com/drive/folders/1r5FTuqVdDo7vU4QEXnKTqOLKCXl6E723?usp=drive_link',
-    //   tecnologias: [djangoicon, pythonicon, sqliteicon, tailwindicon],
-    // },
+    {
+      title: 'Barberia',
+      description: (
+        <>
+          Este aplicativo web fue un trabajo desarrollado para estudiantes de una universidad, consta de funcionalidad de registro de usuarios, agendamiento de citas y filtrado de barberías disponibles en la ciudad. <strong>No está subida a Render porque terminó el plan</strong>
+        </>
+      ),
+      github: 'https://github.com/LarsSong1/barberia',
+      view: 'https://drive.google.com/drive/folders/1r5FTuqVdDo7vU4QEXnKTqOLKCXl6E723?usp=drive_link',
+      tecnologias: [djangoicon, pythonicon, tailwindicon, emailicon],
+      img: barberiaApp,
+      gradientT: '#FFE891',
+      gradientB: '#6A6F50',
+
+    },
+    {
+      title: 'AI Cacao',
+      description: (
+        <>
+          Es un aplicativo web desarrollado para la detección de enfermedades en Mazorcas de Cacao como puede ser la Monilia y la Phytophthora usando una red nueronal previamente entrenada en Yolov5 <strong>No está subida a Render porque terminó el plan</strong>
+        </>
+      ),
+      github: 'https://github.com/LarsSong1/cacaoia-app',
+      view: 'https://drive.google.com/file/d/1gXCmKtXSTiCMm_vx_Oj223lAIoEUDyc8/view?usp=sharing',
+      img: aiCacaoImg,
+      tecnologias: [djangoicon, pythonicon, ultralitycsicon],
+      gradientT: '#FFE891',
+      gradientB: '#C1B259',
+    },
     {
       title: 'Tyres & M',
       description: 'Es un aplicativo web desarrollado para un negocio familiar de reencauche y respuestos para vehiculos y motociletas',
