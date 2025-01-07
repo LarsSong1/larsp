@@ -23,6 +23,9 @@ import djangoicon from '../../assets/img/iconos/cdjango.svg'
 import ultralitycsicon from '../../assets/img/iconos/cultralitycs.svg'
 import aiCacaoImg from '../../assets/img/cocoaApp.webp'
 import barberiaApp from '../../assets/img/barberiaApp.webp'
+import getStreamIcon from '../../assets/img/iconos/cgetstream.svg'
+import typeScriptIcon from '../../assets/img/iconos/ctypescript.svg'
+import devspotImg from '../../assets/img/devspotApp.webp'
 
 import { SwiperSlide, Swiper } from "swiper/react";
 import { Autoplay } from 'swiper/modules'
@@ -41,6 +44,22 @@ function Projects() {
       gradientT: '#D9974D',
       gradientB: '#000000',
     },
+    {
+      title: 'Dev Spot',
+      description: (
+        <>
+          Este aplicativo es una practica con TypeScript y fue desarrollado para reunir a toda la comunidad de programadores dentro de un solo sitio . <strong>El proyecto esta desplegado en render, solo posee caracteristicas gratuitas de GetStream.io, No esta terminado</strong>
+        </>
+      ),
+      github: 'https://github.com/LarsSong1/PairProgramingApp',
+      view: 'https://pairprogramingapp.onrender.com/',
+      tecnologias: [nexticon, getStreamIcon, typeScriptIcon],
+      img: devspotImg,
+      gradientT: '#FFFF21',
+      gradientB: '#7C4509',
+
+    },
+
     {
       title: 'Blog TopTen Products',
       description: 'Blog Sobre los Productos mas destacados de distintas plataformas de E-commerce',

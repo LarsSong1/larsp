@@ -21,6 +21,7 @@ import fleticon from '../../assets/img/iconos/cflet.svg'
 import figmaicon from '../../assets/img/iconos/cfigma.svg'
 import spline from '../../assets/img/iconos/cspline.svg'
 import expoicon from '../../assets/img/iconos/cexpo.svg'
+import emailjs from '../../assets/img/iconos/cemailjs.svg'
 
 
 
@@ -73,6 +74,10 @@ const techData: Tab[] = [
                 img: cssicon,
                 title: 'Css'
             },
+            {
+                img: emailjs,
+                title: 'Emailjs'
+            }
 
         ]
 
