@@ -22,6 +22,7 @@ import figmaicon from '../../assets/img/iconos/cfigma.svg'
 import spline from '../../assets/img/iconos/cspline.svg'
 import expoicon from '../../assets/img/iconos/cexpo.svg'
 import emailjs from '../../assets/img/iconos/cemailjs.svg'
+import swaggericon from '../../assets/img/iconos/cswagger.svg'
 
 
 
@@ -77,6 +78,10 @@ const techData: Tab[] = [
             {
                 img: emailjs,
                 title: 'Emailjs'
+            },
+            {
+                img: swaggericon,
+                title: 'Swagger'
             }
 
         ]
